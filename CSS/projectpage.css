@@ -1,0 +1,344 @@
+h1
+{
+    padding: 18px 0px 38px 0px;
+}
+
+h2
+{
+    padding: 18px 0px;
+}
+
+h3
+{
+    padding: 16px 0px;
+}
+
+.ProjectDetailsContainer
+{
+    margin: 20px auto 30px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.ProjectDetailsContainer div
+{
+    margin: 2px 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    column-gap: 10px;
+    row-gap: 4px;
+}
+
+.ProjectDetailsContainer div div
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.ProjectDetailsContainer div div h2:nth-child(1)
+{
+    display: block;
+    padding: 2px 5px;
+    color: black;
+    font-family: var(--PrimaryFont);
+    font-size: 2.2rem;
+    font-weight: 120;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1.8;
+    word-spacing: normal;
+}
+
+.ProjectDetailsContainer div div h2:nth-child(2)
+{
+    display: block;
+    padding: 2px 20px;
+    color: white;
+    font-family: var(--SecondaryFont);
+    font-size: 1.8rem;
+    font-weight: 120;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1.8;
+    word-spacing: normal;
+    background-color: var(--SiteColorOne);
+}
+
+.ProjectParagraphPrimary
+{
+    margin: 30px auto;
+    width: 74%;
+    color: black;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    word-spacing: normal;
+    text-align: left;
+}
+
+.ProjectParagraphPrimaryCentered
+{
+    margin: 30px auto;
+    width: 74%;
+    color: black;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    word-spacing: normal;
+    text-align: center;
+}
+
+.ProjectParagraphSecondary
+{
+    margin: 30px auto;
+    width: 74%;
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1.8;
+    word-spacing: normal;
+    text-align: left;
+}
+
+.ProjectParagraphBulletPoint
+{
+    margin: 2px auto;
+    width: 74%;
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1.8;
+    word-spacing: normal;
+    text-align: center;
+}
+
+.ProjectGifImage
+{
+    margin: 30px auto 30px auto;
+    width: 56%;
+    display: block;
+}
+
+.ProjectGifImageWide
+{
+    margin: 30px auto 24px auto;
+    width: 70%;
+    display: block;
+}
+
+.ImageGridColumn
+{
+    margin: 30px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    row-gap: 16px;
+}
+
+.ImageGridRowTwo
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    row-gap: 16px;
+}
+
+.ImageGridRowTwo div
+{
+    padding: 0px 8px;
+    flex: 50%;
+    max-width: 50%;
+}
+
+.ImageGridRowThree
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    row-gap: 16px;
+}
+
+.ImageGridRowThree div
+{
+    padding: 0px 8px;
+    flex: 33.3%;
+    max-width: 33.3%;
+}
+
+
+.ImageGridRowFour
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    row-gap: 16px;
+}
+
+.ImageGridRowFour div
+{
+    padding: 0px 8px;
+    flex: 25%;
+    max-width: 25%;
+}
+
+.ImageGalleryList
+{
+    margin: 0;
+    padding: 24px 4vw;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ImageGalleryListItem
+{
+    height: 24vh;
+    flex-grow: 1;
+}
+
+.ImageGalleryListItem img
+{
+    min-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.ProjectPageSingleImage
+{
+    margin: 18px auto;
+    display: block;
+    width: 80%;
+    height: 100%;
+}
+
+.ProjectPageYTEmbed
+{
+    aspect-ratio: var(--YTAspect);
+    width:min(100%, min(840px, 90vh*(var(--YTAspect))));
+    margin: 44px auto;
+    display: block;
+    border: none;
+}
+
+.ProjectPageYTEmbedTall
+{
+    aspect-ratio: var(--YTAspectTall);
+    width:min(100%, min(840px, 90vh*(var(--YTAspectTall))));
+    margin: 44px auto;
+    display: block;
+    border: none;
+}
+
+.ProjectPageYTEmbedWide
+{
+    aspect-ratio: var(--YTAspectWide);
+    width:min(100%, min(1920px, 90vh*(var(--YTAspectWide))));
+    margin: 44px auto;
+    display: block;
+    border: none;
+}
+
+.ProjectPageSteamEmbed
+{
+    --r: 646 / 190;
+    aspect-ratio: var(--r);
+    width:min(100%, min(646px, 90vh*(var(--r))));
+    margin: 24px auto 24px auto;
+    display: block;
+    height: 190px;
+    border: none;
+}
+
+.ProjectPageItchIOEmbed
+{
+    margin: 24px auto 48px auto;
+    display: block;
+    width: 552px;
+    height: 167px;
+    border: none;
+}
+
+.ProjectStoreButtonsRow
+{
+    margin: 16px auto 40px auto;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+
+.ProjectAppStoreButton
+{
+    width: fit-content;
+    height: 74%;
+}
+
+.ProjectAppStoreButton img
+{
+    margin: 0 auto;
+    display: block;
+}
+
+.ProjectAppStoreButton:hover
+{
+    background-color: rgba(0, 0, 0, 0.132);
+    box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.247);
+}

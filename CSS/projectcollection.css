@@ -1,0 +1,266 @@
+.ProjectsHolder
+{
+    padding-top: 60px;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 300px));
+    grid-auto-rows: minmax(130px, 384px);
+    grid-gap: 10px 50px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.ProjectButton
+{
+    width: 294px;
+    height: 100%;
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+}
+
+.ProjectButton .ProjectButtonImage
+{
+    width: 100%;
+    height: 66%;
+    object-fit: cover;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.ProjectButton:hover img
+{
+    transform: scale(1.08);
+}
+
+
+.ProjectButton .ProjectTitlesHolder
+{
+    padding-top: 16px;
+    height: 42%;
+    overflow: hidden;
+    z-index: 2;
+    background-color: white;
+}
+
+.ProjectButtonTitlePrimary
+{
+    padding: 0px 0px 6px 0px;
+    color: var(--SiteColorOne);
+    font-family: var(--PrimaryFont);
+    line-height: 1.22;
+    font-size: 3.2rem;
+    font-weight: 450;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    word-spacing: normal;
+}
+
+.ProjectButtonTitleSecondary
+{
+    padding: 0px 0px 3px 0px;
+    color: var(--SiteColorOne);
+    font-family: var(--SecondaryFont);
+    font-size: 1.4rem;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    word-spacing: normal;
+}
+
+.ProjectSortByHolder
+{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.ProjectCategories
+{
+    width: 50vw;
+    padding: 6px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ProjectCategoryButton
+{
+    width: 100%;
+    height: 24pt;
+    background-color: var(--SiteColorOne);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProjectCategoryButtonCurrent
+{
+    width: 100%;
+    height: 24pt;
+    background-color: var(--SiteColorTwo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProjectSortByHolder h2
+{
+    height: 100%;
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: var(--PrimaryFont);
+}
+
+.ProjectCategoryButton h3
+{
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+    transition: all ease-in-out 100ms;
+    font-family: var(--SecondaryFont);
+}
+
+.ProjectCategoryButton:hover h3
+{
+    color: var(--SiteColorTwo);
+}
+
+.ProjectCategoryButtonCurrent h3
+{
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--SiteColorOne);
+    font-family: var(--SecondaryFontBold);
+}
+
+/* ----------------------------------- DIFFERENT SCREEN SIZES ----------------------------------- */
+
+@media only screen and (max-width: 1300px)
+{
+    .ProjectSortByHolder
+    {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .ProjectCategories
+    {
+        width: 58vw;
+        gap: 16px;
+    }
+    
+    .ProjectCategoryButton
+    {
+        width: 46%;
+        height: 24pt;
+    }
+    
+    .ProjectCategoryButtonCurrent
+    {
+        width: 46%;
+        height: 24pt;
+    }
+}
+
+@media only screen and (max-width: 992px)
+{
+
+    .ProjectsHolder
+    {
+        padding-top: 40px;
+    }
+
+    .ProjectSortByHolder
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .ProjectCategories
+    {
+        width: 72vw;
+        gap: 16px;
+    }
+    
+    .ProjectCategoryButton
+    {
+        width: 46%;
+        height: 24pt;
+    }
+    
+    .ProjectCategoryButtonCurrent
+    {
+        width: 46%;
+        height: 24pt;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    .ProjectSortByHolder
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .ProjectCategories
+    {
+        width: 70vw;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    
+    .ProjectCategoryButton
+    {
+        width: 46%;
+        height: 24pt;
+    }
+    
+    .ProjectCategoryButtonCurrent
+    {
+        width: 46%;
+        height: 24pt;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    .ProjectSortByHolder
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .ProjectCategories
+    {
+        width: 70vw;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    
+    .ProjectCategoryButton
+    {
+        width: 46%;
+        height: 24pt;
+    }
+    
+    .ProjectCategoryButtonCurrent
+    {
+        width: 46%;
+        height: 24pt;
+    }
+    
+}

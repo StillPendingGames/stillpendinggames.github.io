@@ -1,0 +1,52 @@
+.PDFView
+{
+    margin: 0px 0px 0px 0px;
+    display: block;
+    width: 100%;
+    height: 1200px;
+    border-style: none;
+    margin: 0;
+}
+
+.DownloadButtonFixed
+{
+    display: none;
+}
+
+/* ----------------------------------- DIFFERENT SCREEN SIZES ----------------------------------- */
+
+/*
+@media only screen and (max-width: 1200px)
+{
+
+}
+*/
+
+@media only screen and (max-width: 992px)
+{
+    .PDFView
+    {
+        height: 940px;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    .PDFView
+    {
+        height: 940px;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    .PDFView
+    {
+        height: 500px;
+    }
+
+    .DownloadButtonFixed
+    {
+        display: flex;
+    }
+}

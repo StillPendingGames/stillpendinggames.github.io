@@ -1,0 +1,282 @@
+/* ----------------------------------- DIFFERENT SCREEN SIZES ----------------------------------- */
+
+@media screen and (max-width: 1400px)
+{
+    .ImageGridColumnThree
+    {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .ImageGridColumnFour
+    {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1300px)
+{
+    .ProjectParagraphPrimary
+    {
+        width: 86%;
+    }
+    
+    .ProjectParagraphPrimaryCentered
+    {
+        width: 86%;
+    }
+
+    .ProjectParagraphSecondary
+    {
+        width: 86%;
+    }
+
+    .ProjectGifImage
+    {
+        width: 86%;
+    }
+
+    .ProjectGifImageWide
+    {
+        width: 100%;
+    }
+
+    .ImageGridColumn
+    {
+        width: 88%;
+    }
+
+    .ImageGridRowFour div
+    {
+        flex: 33.3%;
+        max-width: 33.3%;
+    }
+}
+
+@media only screen and (max-width: 992px)
+{
+    .ProjectParagraphPrimary
+    {
+        width: 90%;
+    }
+    
+    .ProjectParagraphPrimaryCentered
+    {
+        width: 90%;
+    }
+
+    .ProjectParagraphSecondary
+    {
+        width: 90%;
+    }
+
+    .ProjectGifImage
+    {
+        width: 90%;
+    }
+
+    .ProjectGifImageWide
+    {
+        width: 100%;
+    }
+
+    .ImageGridColumn
+    {
+        width: 90%;
+    }
+
+    .ImageGridRowThree div
+    {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .ImageGridRowFour div
+    {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .ImageGalleryList
+    {
+        gap: 12px;
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    .ProjectParagraphPrimary
+    {
+        width: 90%;
+    }
+    
+    .ProjectParagraphPrimaryCentered
+    {
+        width: 90%;
+    }
+
+    .ProjectParagraphSecondary
+    {
+        width: 90%;
+    }
+
+    .ProjectPageItchIOEmbed
+    {
+        width: 202px;
+    }
+
+    .ProjectGifImage
+    {
+        width: 100%;
+    }
+
+    .ProjectGifImageWide
+    {
+        width: 100%;
+    }
+
+    .ImageGridColumn
+    {
+        width: 100%;
+    }
+
+    .ImageGridRowTwo div
+    {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .ImageGridRowThree div
+    {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .ImageGridRowFour div
+    {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .ImageGalleryList
+    {
+        gap: 12px;
+        padding: 10px 20px;
+    }
+
+    .MastheadImage
+    {
+        display: none;
+    }
+
+    .ProjectPageSingleImage
+    {
+        width: 100%;
+    }
+
+    .ProjectPageYTEmbedWide
+    {
+        aspect-ratio: var(--YTAspect);
+        width:min(100%, min(840px, 90vh*(var(--YTAspect))));
+        margin: 44px auto;
+        display: block;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    .ProjectDetailsContainer div div
+    {
+        width: 98%;
+        justify-content: space-between;
+    }
+
+    .ProjectDetailsContainer div div h2:nth-child(1)
+    {
+        font-size: 2.2rem;
+    }
+
+    .ProjectDetailsContainer div div h2:nth-child(2)
+    {
+        font-size: 1.6rem;
+    }
+
+    .ProjectParagraphPrimary
+    {
+        width: 90%;
+    }
+    
+    .ProjectParagraphPrimaryCentered
+    {
+        width: 90%;
+    }
+
+    .ProjectParagraphSecondary
+    {
+        width: 90%;
+    }
+
+    .ProjectPageItchIOEmbed
+    {
+        width: 202px;
+    }
+
+    .ProjectGifImage
+    {
+        width: 100%;
+    }
+
+    .ProjectGifImageWide
+    {
+        width: 100%;
+    }
+
+    .ImageGridColumn
+    {
+        width: 100%;
+    }
+
+    .ImageGridRowTwo div
+    {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .ImageGridRowThree div
+    {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .ImageGridRowFour div
+    {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .ImageGalleryList
+    {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .ImageGalleryListItem
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .ImageGalleryListItem img
+    {
+        min-width: 0;
+        width: 100%;
+    }
+    
+    .MastheadImage
+    {
+        display: none;
+    }
+}
