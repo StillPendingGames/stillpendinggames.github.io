@@ -267,6 +267,21 @@ body:after
     gap: 14px;
 }
 
+.NavBarSocialItch
+{
+    width: 24px;
+    height: 24px;
+    background-image: url(../Img/Social/SocialIconItch.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all ease-in-out 100ms;
+}
+
+.NavBarSocialItch:hover
+{
+    background-image: url(../Img/Social/SocialIconItchHover.png);
+}
+
 .NavBarSocialLinkedIn
 {
     width: 24px;
@@ -334,68 +349,7 @@ body:after
     background-color: var(--SiteColorOne);
 }
 
-.FooterContainerFlex
-{
-    display: flex;
-    flex-basis: 100%;
-}
-
-.FooterContainerFlex a
-{
-    padding: 0px;
-    line-height: 1.5;
-    color: white;
-    font-family: var(--PrimaryFont);
-    font-size: 1.8rem;
-    font-weight: 100;
-    font-style: normal;
-    text-align: left;
-    word-spacing: normal;
-    letter-spacing: 0.38pt;
-    text-transform: uppercase;
-    transition: all ease-in-out 180ms;
-}
-
-.FooterContainerFlex a:hover
-{
-    color: var(--SiteColorTwo);
-}
-
-.FooterContainerFlex ul:nth-child(1)
-{
-    border-left: 4px solid white;
-    padding-left: 20px;
-}
-
-.FooterContainerFlex ul:nth-child(1),
-.FooterContainerFlex ul:nth-child(2)
-{
-    flex-basis: 180px;
-}
-
-.FooterContainerFlex ul:nth-child(3)
-{
-    flex-grow: 2;
-    align-self: center;
-}
-
-.FooterContainerFlex ul:nth-child(3) p
-{
-    padding: 0px;
-    color: rgba(255, 255, 255, 0.5);
-    text-align: center;
-    font-size: 1.4rem;
-}
-
-.FooterContainerFlex ul:nth-child(4)
-{
-    flex-grow: 1;
-    flex-basis: 180px;
-    border-right: 4px solid white;
-    padding-right: 20px;
-}
-
-.FooterContainerFlex ul:nth-child(4) h2
+.FooterContactInfo h2
 {
     padding: 0px;
     color: white;
@@ -404,13 +358,13 @@ body:after
     font-size: 1.8rem;
     font-weight: 100;
     font-style: normal;
-    text-align: right;
+    text-align: center;
     word-spacing: normal;
     text-transform: uppercase;
     letter-spacing: 0.38pt;
 }
 
-.FooterContainerFlex ul:nth-child(4) h3
+.FooterContactInfo h3
 {
     padding: 0px;
     color: white;
@@ -419,10 +373,18 @@ body:after
     font-size: 1.8rem;
     font-weight: 100;
     font-style: normal;
-    text-align: right;
+    text-align: center;
     word-spacing: normal;
     text-transform: uppercase;
     letter-spacing: 0.38pt;
+}
+
+.FooterCopyright
+{
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 1.4rem;
 }
 
 .ProjectGithubButton
