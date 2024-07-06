@@ -89,7 +89,7 @@
 
     .NavBarSocial
     {
-        display: none;
+        padding-left: 0px;
     }
 
     .MobileNavMenu
@@ -153,10 +153,10 @@
         justify-content: center;
     }
 
-    .NavBarSocialLinkedIn, .NavBarSocialYoutube, .NavBarSocialGit, .NavBarSocialTwitter
+    .NavBarSocialLinkedIn, .NavBarSocialYoutube, .NavBarSocialGit, .NavBarSocialTwitter, .NavBarSocialItch
     {
-        width: 32px;
-        height: 32px;
+        width: 28px;
+        height: 28px;
     }
 
     .BurgerMenuButton
@@ -208,6 +208,7 @@
     .NavBarName
     {
         font-size: 4rem;
+        display: none;
     }
 
     .ProjectGithubButton

@@ -259,7 +259,7 @@ body:after
 .NavBarSocial
 {
     padding-right: 30px;
-    padding-left: 248px;
+    padding-left: 30px;
     width: fit-content;
     height: 100%;
     display: flex;
