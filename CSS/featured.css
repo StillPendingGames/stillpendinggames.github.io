@@ -69,6 +69,28 @@ h1
     box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.247);
 }
 
+.FeaturedElementVideo
+{
+    width: 34%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.FeaturedElementVideo iframe
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 .ViewProjectButton
 {
     width: 120px;
