@@ -3,8 +3,8 @@
     --SiteColorOne: rgb(66, 66, 66);
     --SiteColorTwo: rgb(255, 187, 207);
     --SiteColorThree: rgb(195, 138, 155);
-    --PrimaryFont: AgencyFB, Arial, Helvetica, sans-serif;
-    --PrimaryFontBold: AgencyFBBold, Arial, Helvetica, sans-serif;
+    --PrimaryFont: GillSans, Arial, Helvetica, sans-serif;
+    --PrimaryFontBold: GillSansBold, Arial, Helvetica, sans-serif;
     --SecondaryFont: Jost, Arial, Helvetica, sans-serif;
     --SecondaryFontBold: JostBold, Arial, Helvetica, sans-serif;
     --YTAspect: 840 / 473;
@@ -14,14 +14,14 @@
 
 @font-face
 {
-    font-family: AgencyFB;
-    src: url(../Fonts/AgencyFB.ttf);
+    font-family: GillSans;
+    src: url(../Fonts/Gill-Sans-Bold.otf);
 }
 
 @font-face
 {
-    font-family: AgencyFBBold;
-    src: url(../Fonts/AGENCYB.TTF);
+    font-family: GillSansBold;
+    src: url(../Fonts/Gill-Sans-Ultra-Bold.otf);
 }
 
 @font-face
@@ -66,7 +66,7 @@ h1
 {
     color: black;
     font-family: var(--PrimaryFont);
-    font-size: 7.5rem;
+    font-size: 6.8rem;
     font-weight: 400;
     font-style: normal;
     text-align: center;
@@ -192,8 +192,8 @@ body:after
     margin-left: 20px;
     padding: 0px;
     color: var(--SiteColorOne);
-    font-family: var(--PrimaryFont);
-    font-size: 4.6rem;
+    font-family: var(--PrimaryFontBold);
+    font-size: 3.4rem;
     font-weight: 580;
     font-style: normal;
     text-align: left;
@@ -351,11 +351,12 @@ body:after
 
 .FooterContactInfo h2
 {
+    margin: 10px 0px;
     padding: 0px;
     color: white;
     line-height: 1.4;
-    font-family: var(--PrimaryFont);
-    font-size: 1.8rem;
+    font-family: var(--PrimaryFontBold);
+    font-size: 2.0rem;
     font-weight: 100;
     font-style: normal;
     text-align: center;
@@ -366,11 +367,12 @@ body:after
 
 .FooterContactInfo h3
 {
+    margin: 4px 0px;
     padding: 0px;
     color: white;
     line-height: 1.5;
     font-family: var(--PrimaryFont);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 100;
     font-style: normal;
     text-align: center;
