@@ -342,6 +342,21 @@ body:after
     background-image: url(../Img/Social/SocialIconTwitterHover.png);
 }
 
+.NavBarSocialInstagram
+{
+    width: 24px;
+    height: 24px;
+    background-image: url(../Img/Social/SocialIconInstagram.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all ease-in-out 100ms;
+}
+
+.NavBarSocialInstagram:hover
+{
+    background-image: url(../Img/Social/SocialIconInstagramHover.png);
+}
+
 .FooterContainer
 {
     width: 100%;
