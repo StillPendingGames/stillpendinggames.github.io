@@ -139,7 +139,7 @@ body:after
     height: 0;
     overflow: hidden;
     z-index: -1;
-    content: url(../Img/Social/SocialIconGithubHover.png) url(../Img/Social/SocialIconLinkedInHover.png) url(../Img/Social/SocialIconTwitterHover.png) url(../Img/Social/SocialIconYoutubeHover.png);
+    content: url(../Img/Social/SocialIconGithubHover.png) url(../Img/Social/SocialIconLinkedInHover.png) url(../Img/Social/SocialIconTwitterHover.png) url(../Img/Social/SocialIconYoutubeHover.png) url(../Img/Social/SocialIconItchHover.png) url(../Img/Social/SocialIconInstagramHover.png);
 }
 
 .MastheadImage
