@@ -29,7 +29,10 @@ h1
 .FeaturedElementTextHolder
 {
     padding: 24px 22px;
-    width: 66%;
+    /* Allow the text column to flex and shrink when space is tight.
+       min-width: 0 is required so children can overflow/shrink inside flexbox. */
+    flex: 1 1 50%;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     gap: 18px;
@@ -71,26 +74,39 @@ h1
 
 .FeaturedElementVideo
 {
-    width: 34%;
+    /* Give the video column priority: fixed flex-basis and no shrinking.
+       This prevents the text column from forcing the video to collapse.
+       The container preserves a 16:9 aspect ratio.
+    */
+    flex: 0 0 50%; /* fixed width equal to the image column */
     height: 100%;
-    object-fit: cover;
+    aspect-ratio: 16 / 9; /* ensure the video keeps 16:9 */
     overflow: hidden;
-    box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.247);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
+    box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.247);
+    background-color: black;
+    display: block;
 }
 
 .FeaturedElementVideo iframe
 {
+    /* Make the iframe fill the container. Using absolute positioning
+       gives a predictable 'cover' area inside an overflow-hidden parent. */
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    inset: 0; /* top:0; right:0; bottom:0; left:0; */
+    width: 100%;
+    height: 100%;
+    border: none;
+
+    /* Prevent any interaction with the video (clicks, hover, focus) */
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+
+    /* Mobile/touch: avoid any touch handling */
+    touch-action: none;
 }
-
-
 .ViewProjectButton
 {
     width: 120px;
