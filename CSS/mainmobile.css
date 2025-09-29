@@ -153,10 +153,10 @@
         justify-content: center;
     }
 
-    .NavBarSocialLinkedIn, .NavBarSocialYoutube, .NavBarSocialGit, .NavBarSocialTwitter, .NavBarSocialItch
+    .NavBarSocialLinkedIn, .NavBarSocialYoutube, .NavBarSocialGit, .NavBarSocialTwitter, .NavBarSocialItch, .NavBarSocialFacebook, .NavBarSocialInstagram
     {
-        width: 28px;
-        height: 28px;
+        width: 26px;
+        height: 26px;
     }
 
     .BurgerMenuButton
