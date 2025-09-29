@@ -132,6 +132,7 @@ p
     max-width: 1400pt;
 }
 
+/*
 body:after
 {
     position: absolute;
@@ -141,6 +142,7 @@ body:after
     z-index: -1;
     content: url(../Img/Social/SocialIconGithubHover.png) url(../Img/Social/SocialIconLinkedInHover.png) url(../Img/Social/SocialIconTwitterHover.png) url(../Img/Social/SocialIconYoutubeHover.png) url(../Img/Social/SocialIconItchHover.png) url(../Img/Social/SocialIconInstagramHover.png);
 }
+*/
 
 .MastheadImage
 {
@@ -271,90 +273,126 @@ body:after
 {
     width: 24px;
     height: 24px;
-    background-image: url(../Img/Social/SocialIconItch.png);
+    background: var(--SiteColorOne);
     background-repeat: no-repeat;
     background-size: cover;
+    mask-image: url(../Img/Social/SVGs/SocialIconItch.svg);
+    mask-size: 24px 24px;
+    mask-repeat: no-repeat;
     transition: all ease-in-out 100ms;
 }
 
 .NavBarSocialItch:hover
 {
-    background-image: url(../Img/Social/SocialIconItchHover.png);
+    background: black;
 }
 
 .NavBarSocialLinkedIn
 {
     width: 24px;
     height: 24px;
-    background-image: url(../Img/Social/SocialIconLinkedIn.png);
+    background: var(--SiteColorOne);
     background-repeat: no-repeat;
     background-size: cover;
+    mask-image: url(../Img/Social/SVGs/SocialIconLinkedIn.svg);
+    mask-size: 24px 24px;
+    mask-repeat: no-repeat;
     transition: all ease-in-out 100ms;
 }
 
 .NavBarSocialLinkedIn:hover
 {
-    background-image: url(../Img/Social/SocialIconLinkedInHover.png);
+    background: black;
 }
 
 .NavBarSocialYoutube
 {
     width: 24px;
     height: 24px;
-    background-image: url(../Img/Social/SocialIconYoutube.png);
+    background: var(--SiteColorOne);
     background-repeat: no-repeat;
     background-size: cover;
+    mask-image: url(../Img/Social/SVGs/SocialIconYoutube.svg);
+    mask-size: 24px 24px;
+    mask-repeat: no-repeat;
     transition: all ease-in-out 100ms;
 }
 
 .NavBarSocialYoutube:hover
 {
-    background-image: url(../Img/Social/SocialIconYoutubeHover.png);
+    background: black;
 }
 
 .NavBarSocialGit
 {
     width: 24px;
     height: 24px;
-    background-image: url(../Img/Social/SocialIconGithub.png);
+    background: var(--SiteColorOne);
     background-repeat: no-repeat;
     background-size: cover;
+    mask-image: url(../Img/Social/SVGs/SocialIconGithub.svg);
+    mask-size: 24px 24px;
+    mask-repeat: no-repeat;
     transition: all ease-in-out 100ms;
 }
 
 .NavBarSocialGit:hover
 {
-    background-image: url(../Img/Social/SocialIconGithubHover.png);
+    background: black;
 }
 
 .NavBarSocialTwitter
 {
     width: 24px;
     height: 24px;
-    background-image: url(../Img/Social/SocialIconTwitter.png);
+    background: var(--SiteColorOne);
     background-repeat: no-repeat;
     background-size: cover;
+    mask-image: url(../Img/Social/SVGs/SocialIconTwitter.svg);
+    mask-size: 24px 24px;
+    mask-repeat: no-repeat;
     transition: all ease-in-out 100ms;
 }
 
 .NavBarSocialTwitter:hover
 {
-    background-image: url(../Img/Social/SocialIconTwitterHover.png);
+    background: black;
 }
 
 .NavBarSocialInstagram
 {
     width: 24px;
     height: 24px;
-    background-image: url(../Img/Social/SocialIconInstagram.png);
+    background: var(--SiteColorOne);
     background-repeat: no-repeat;
     background-size: cover;
+    mask-image: url(../Img/Social/SVGs/SocialIconInstagram.svg);
+    mask-size: 24px 24px;
+    mask-repeat: no-repeat;
     transition: all ease-in-out 100ms;
 }
 
 .NavBarSocialInstagram:hover
 {
-    background-image: url(../Img/Social/SocialIconInstagramHover.png);
+    background: black;
+}
+
+.NavBarSocialFacebook
+{
+    width: 24px;
+    height: 24px;
+    background: var(--SiteColorOne);
+    background-repeat: no-repeat;
+    background-size: cover;
+    mask-image: url(../Img/Social/SVGs/SocialIconFacebook.svg);
+    mask-size: 24px 24px;
+    mask-repeat: no-repeat;
+    transition: all ease-in-out 100ms;
+}
+
+.NavBarSocialFacebook:hover
+{
+    background: black;
 }
 
 .FooterContainer
