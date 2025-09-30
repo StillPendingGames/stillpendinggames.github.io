@@ -79,16 +79,14 @@
                 <div class="FeaturedElement" style="background-color: #92448D;">
                     <div class="FeaturedElementTextHolder">
                         <h2>Circuit Breaker</h2>
-                        <h3>Self Published | Steam - PC | Unity  Engine | October 2021</h3>
+                        <h3>Self Published | Steam - PC | Unity Engine | October 2021</h3>
                         <p class="FeaturedElementParagraph">Take control of the Rookie as you step into each circuit and fight against many different types of opposing robots. Master positioning yourself correctly on the field and when to invoke the power of each audience in this turn based real time strategy game to win.</p>
                         <a href="https://store.steampowered.com/app/1745960/Circuit_Breaker/" target="_blank" rel="noopener noreferrer" class="ViewProjectButton"><p>Steam Page</p></a>
                     </div>
-                    <div class="FeaturedElementVideo">
-                        <iframe src="https://www.youtube-nocookie.com/embed/HZctaD7iE-0?si=opYM6MoEjkMl8EDD&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
+                    <div class="FeaturedElementVideo" id="circuitBreakerYT" data-video-id="HZctaD7iE-0"></div>
                 </div>
                 <div class="FeaturedElement" style="background-color: #209500;">
-                    <img src="Img/ProjectPages/Breakernam/Androidmada_Level_Concept-4.png" class="FeaturedElementImage" alt="Androidmada Thumbnail">
+                    <div class="FeaturedElementVideo" id="techDivisionYT" data-video-id="QR_6tai6OJw"></div>
                     <div class="FeaturedElementTextHolder">
                         <h2>Tech Division</h2>
                         <h3>In Development targeting PC, Mac, and Console | Unity Engine</h3>
@@ -120,6 +118,8 @@
         </div>
     </footer>
 
+    <!-- Consolidated mini featured videos initializer (loads YT API once and creates multiple players) -->
+    <script src="js/MiniFeaturedVideos.js"></script>
     <script src="js/TopLevelFooter.js"></script>
 
 </body>

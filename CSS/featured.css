@@ -20,7 +20,7 @@ h1
 .FeaturedElement
 {
     height: 310px;
-    width: 74%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -107,6 +107,7 @@ h1
     /* Mobile/touch: avoid any touch handling */
     touch-action: none;
 }
+
 .ViewProjectButton
 {
     width: 120px;
