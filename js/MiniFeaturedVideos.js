@@ -54,12 +54,17 @@
 
                                     var levels = event.target.getAvailableQualityLevels && event.target.getAvailableQualityLevels();
                                     if (Array.isArray(levels) && levels.length) {
-                                        var rank = {"highres":8,"hd2880":7,"hd2160":6,"hd1440":5,"hd1080":4,"hd720":3,"large":2,"medium":1,"small":0};
-                                        levels.sort(function(a,b){return (rank[b]||0)-(rank[a]||0)});
-                                        var best = levels[0];
-                                        try { event.target.setPlaybackQuality(best); } catch(e) { }
+                                        // Prefer 720p if available, otherwise use the highest available quality.
+                                        if (levels.indexOf('hd720') !== -1) {
+                                            try { event.target.setPlaybackQuality('hd720'); } catch(e) { }
+                                        } else {
+                                            var rank = {"highres":8,"hd2880":7,"hd2160":6,"hd1440":5,"hd1080":4,"hd720":3,"large":2,"medium":1,"small":0};
+                                            levels.sort(function(a,b){return (rank[b]||0)-(rank[a]||0)});
+                                            var best = levels[0];
+                                            try { event.target.setPlaybackQuality(best); } catch(e) { }
+                                        }
                                     } else {
-                                        try { event.target.setPlaybackQuality('hd1080'); } catch(e) { }
+                                        try { event.target.setPlaybackQuality('hd720'); } catch(e) { }
                                     }
                                 } catch(e) { console.warn('player onReady error', e); }
                             },
